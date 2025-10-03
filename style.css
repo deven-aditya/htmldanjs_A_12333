@@ -119,8 +119,8 @@ input[type="number"]:focus {
 
 /* Styles for HtmlForm_A_12111.html */
 form {
-  width: 90%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 700px;
   margin: 20px auto;
   background-color: #fff;
   padding: 20px;
@@ -150,6 +150,8 @@ input[type="date"],
 input[type="email"],
 input[type="number"],
 input[type="file"],
+input[type="tel"],
+button[type="submit"],
 textarea,
 select {
   width: 100%;
@@ -158,6 +160,18 @@ select {
   border-radius: 3px;
   font-size: 1rem;
   margin-top: 5px;
+}
+
+#inputNama {
+  max-width: 700px;
+}
+
+#inputNoTelp {
+  max-width: 700px;
+}
+
+#submitButton {
+  max-width: 700px;
 }
 
 textarea {
@@ -253,7 +267,7 @@ header {
   padding: 20px;
   margin: 30px auto;
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -270,7 +284,7 @@ header {
 }
 
 .schedule-table th {
-  background: #3498db;
+  background: #43783d;
   color: white;
   font-weight: 600;
 }
@@ -320,4 +334,6 @@ header {
   input[type="submit"] {
     padding: 8px 15px;
   }
+
+  
 }

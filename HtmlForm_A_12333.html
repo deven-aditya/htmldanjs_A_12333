@@ -12,7 +12,7 @@
       <li><a href="JSBasic_A_12333.html"onclick="return confirm('Lanjutkan?')">Halaman Javascript</a></li>
   </ul>
 
-  <h2>Form Pendaftaran Mahasiswa</h2>
+  <h2 id="judul" onmouseover="rainbow()">Form Pendaftaran Mahasiswa</h2>
 
   <form onsubmit="return validateForm()">
     <table cellspacing="4" cellpadding="4">
@@ -21,7 +21,7 @@
       <tr>
         <td><label for="inputNama"><b>Nama Mahasiswa</b></label></td>
         <td>
-          <input type="text" id="inputNama" name="nama" maxlength="50">
+          <input type="text" id="inputNama" name="nama" maxlength="100">
         </td>
       </tr>
 
@@ -99,26 +99,29 @@
         <td>
           <fieldset>
             <legend>Game</legend>
-            <input type="checkbox" id="oddity" name="oddity" value="Oddity">
-            <label for="oddity">Oddity</label>
+            
 
-            <input type="checkbox" id="tron" name="tron" value="Tron">
-            <label for="tron">Tron</label>
+            <input type="checkbox" id="roblox" name="roblox" value="Roblox">
+            <label for="roblox">Roblox</label> <br>
 
-            <input type="checkbox" id="conjuring" name="conjuring" value="Conjuring">
-            <label for="conjuring">Conjuring</label>
+            <input type="checkbox" id="magicChess" name="magicChess" value="MagicChess">
+            <label for="magicChess">Magic Chess</label> <br>
+
+            <input type="checkbox" id="minecraft" name="minecraft" value="Minecraft">
+            <label for="minecraft">Minecraft</label> <br>
           </fieldset>
           
           <fieldset>
             <legend>Film</legend>
-            <input type="checkbox" id="roblox" name="roblox" value="Roblox">
-            <label for="roblox">Roblox</label>
 
-            <input type="checkbox" id="magicChess" name="magicChess" value="MagicChess">
-            <label for="magicChess">Magic Chess</label>
+            <input type="checkbox" id="oddity" name="oddity" value="Oddity">
+            <label for="oddity">Oddity</label> <br>
 
-            <input type="checkbox" id="minecraft" name="minecraft" value="Minecraft">
-            <label for="minecraft">Minecraft</label>
+            <input type="checkbox" id="tron" name="tron" value="Tron">
+            <label for="tron">Tron</label> <br>
+
+            <input type="checkbox" id="conjuring" name="conjuring" value="Conjuring">
+            <label for="conjuring">Conjuring</label> <br>
           </fieldset>
 
         </td>
@@ -149,8 +152,8 @@
       <!-- TODO: Tambahkan tombol submit dengan id="simpan" dan value="Simpan". -->
 
       <tr>
-        <td colsspan="2">
-          <button type="submit">Submit</button>
+        <td colspan="2">
+          <button type="submit" id="submitButton">Submit</button>
         </td>
       </tr>
 
@@ -165,7 +168,8 @@
   </form>
 
   <script>
-    const validateForm = () =>alert("Data Berhasil Disimpan !");
+    const validateForm = () =>alert("Data Berhasil Disimpan !");    
+    
   </script>
 </body>
 </html>
